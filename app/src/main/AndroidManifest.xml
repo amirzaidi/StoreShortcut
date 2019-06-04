@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="amirz.storeshortcut">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+        <service
+            android:name=".ShortcutService"
+            android:label="@string/service_name"
+            android:description="@string/service_desc">
+            <intent-filter>
+                <action android:name="com.android.launcher3.PLUGIN" />
+            </intent-filter>
+            <meta-data
+                android:name="interface.descriptor"
+                android:value="com.android.launcher3.plugin.shortcuts.IShortcutPlugin" />
+            <meta-data
+                android:name="interface.version"
+                android:value="1" />
+        </service>
+    </application>
+
+</manifest>

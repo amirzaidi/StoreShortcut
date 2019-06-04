@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Store Shortcut</string>
+    <string name="service_name">Long press</string>
+    <string name="service_desc">Add "Open in Store" and "Share" shortcuts</string>
+    <string name="shortcut_store">Open in Store</string>
+    <string name="shortcut_share">Share</string>
+</resources>
