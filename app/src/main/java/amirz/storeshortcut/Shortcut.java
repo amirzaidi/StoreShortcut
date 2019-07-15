@@ -21,6 +21,7 @@ abstract class Shortcut {
         bundle.putString("disabledMessage", "");
         bundle.putParcelable("userHandle", Process.myUserHandle());
         bundle.putInt("rank", -99);
+        bundle.putBoolean("dynamic", false);
         bundle.putBoolean("enabled", true);
         return bundle;
     }
